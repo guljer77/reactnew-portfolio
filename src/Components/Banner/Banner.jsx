@@ -5,6 +5,7 @@ import { FaEnvira } from "react-icons/fa";
 import { MdOutlineCloudDownload } from "react-icons/md";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Typewriter } from "react-simple-typewriter";
 
 function Banner() {
   useEffect(() => {
@@ -19,6 +20,20 @@ function Banner() {
         <h4 className="lg:w-[60%] h-full py-3 text-white leading-tight lg:text-[42px] text-[28px] font-bold">
           Hi, I'm Md. Guljer Hossain
         </h4>
+        <h6 className="text-white text-[16px] font-medium">
+          A {""}
+          <span>
+            <Typewriter
+              words={["FrontEnd Developer", "Jr. MERN Stack Developer",]}
+              loop={true}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={2000}
+            />
+          </span>
+        </h6>
         <p className="text-[14px] font-light py-3 text-white lg:w-2/4 w-full">
           Architecting Extraordinary Web Experiences: Md Guljer Hossain -
           Inspiring MERN Stack Developer with a Proven Track Record of Creating
