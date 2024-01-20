@@ -7,40 +7,22 @@ import "aos/dist/aos.css";
 
 const Services = [
   {
-    name: "UI/UX Design",
+    name: "Responsive Design",
     icon: <GoNote />,
     title:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio minus architecto, accusantium esse laboriosam qui amet laborum id culpa",
+      "Responsive design is an approach that allows websites and applications to adapt and provide an optimal user experience across various devices and screen sizes.",
   },
   {
-    name: "Web Design",
+    name: "Front-End",
     icon: <MdDashboardCustomize />,
     title:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio minus architecto, accusantium esse laboriosam qui amet laborum id culpa",
+      "MERN front-end development: Building user interfaces with React and css libraries.",
   },
   {
-    name: "Web Development",
+    name: "Back-End",
     icon: <IoDiamondSharp />,
     title:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio minus architecto, accusantium esse laboriosam qui amet laborum id culpa",
-  },
-  {
-    name: "UI/UX Design",
-    icon: <GoNote />,
-    title:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio minus architecto, accusantium esse laboriosam qui amet laborum id culpa",
-  },
-  {
-    name: "Web Design",
-    icon: <MdDashboardCustomize />,
-    title:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio minus architecto, accusantium esse laboriosam qui amet laborum id culpa",
-  },
-  {
-    name: "Web Development",
-    icon: <IoDiamondSharp />,
-    title:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. At distinctio minus architecto, accusantium esse laboriosam qui amet laborum id culpa",
+      "Back-end development: Creating the server-side components of a web application, handling data processing, storage, and integration with the front-end for a complete user experience.",
   },
 ];
 
@@ -51,22 +33,23 @@ function Service() {
   return (
     <div className="lg:p-10 p-5" data-aos="fade-down">
       <div className="lg:pb-10 pb-5">
-        <h2 className="text-[28px] font-semibold">My Services</h2>
+        <h6 className="text-primary text-[16px] uppercase">FEATURES</h6>
+        <h2 className="text-[28px] font-semibold">What I Do</h2>
         <hr className="w-[70px] border-primary border" />
       </div>
       <div className="lg:grid grid-cols-3 gap-7 pt-5 mb-10">
         {Services.map((service, i) => (
           <div
             key={i}
-            className="lg:mb-0 mb-10 shadow-lg text-black text-center p-5 rounded-md bg-gray-100"
+            className="lg:mb-0 mb-10 shadow-lg text-black text-left p-7 rounded-md bg-gray-200 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-gray-500 hover:text-white"
           >
-            <span className="inline-block text-[60px] font-light text-primary relative -top-[47px]">
+            <span className="inline-block text-[60px] font-light text-primary">
               {service?.icon}
             </span>
             <h4 className="lg:text-[22px] text-[18px] font-semibold pb-3">
               {service?.name}
             </h4>
-            <p className="text-[14px] font-light">{service?.title}</p>
+            <p className="text-[15px] font-light">{service?.title}</p>
           </div>
         ))}
       </div>
