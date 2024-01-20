@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Image from "../../assets/1.png";
+import Image2 from '../../assets/2.png';
 
 function Portfolio() {
   useEffect(() => {
@@ -35,7 +36,7 @@ function Portfolio() {
           </div>
         </div>
         <div className="p-5 bg-gray-700 shadow-xl rounded-md">
-          <img src={Image} alt="" />
+          <img src={Image2} alt="" />
           <h4 className="text-[18px] font-medium text-gray-300 pt-5">Web Blog</h4>
           <h6 className="text-[15px] font-light text-gray-300">Blog Website</h6>
           <div className="py-3">
